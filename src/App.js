@@ -1,4 +1,3 @@
-import "./App.css";
 import React from "react";
 import { Route, Switch, Link } from "react-router-dom";
 import About from "./Components/About/About";
@@ -7,7 +6,7 @@ import Home from "./Components/Home/Home";
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="text-gray-600">
         <div>
           <nav>
             <ul id="navigation">

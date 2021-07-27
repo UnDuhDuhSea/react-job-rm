@@ -1,26 +1,45 @@
-import "../../App.css";
+import "./Home.css";
+import Nike from "../../Images/Nike.jpg";
 import React from "react";
-import logo from "../../logo.svg";
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <main>
+        <div>
+          <a href="#">Log In</a>
+          <a href="#">Sign Up</a>
+        </div>
+        <header>
+          <h2>My Jobs</h2>
+          <h3>Relationship Manager</h3>
         </header>
-      </div>
+        <div>
+          <h4>Latest Jobs</h4>
+          <div>
+            {/* cards go here */}
+            <div>
+              <img src={Nike} alt="Nike Image" />
+              <div>
+                <span>Nike</span>
+                <span>Front-End Web Developer</span>
+              </div>
+            </div>
+          </div>
+          <h4>Pas Jobs</h4>
+          <div>
+            {/* cards go here */}
+            <div>
+              <img src="" alt="" />
+              <div>
+                <span>Nike</span>
+                <span>Front-End Web Developer</span>
+              </div>
+            </div>
+          </div>
+          <div>Load more</div>
+        </div>
+      </main>
     );
   }
 }
